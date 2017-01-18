@@ -649,4 +649,8 @@ $(function() {
     }
 
     window.gl = gl;
+    delete(report.draftExtensionsInstructions);
+    delete(report.webgl2Status);
+    delete(report.webgl2Functions);
+    window.jsonReport = JSON.stringify(report);
 });
